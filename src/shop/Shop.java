@@ -31,7 +31,7 @@ public class Shop {
     public static void main(String[] args) {
         // TODO code application logic here
         Shop S1 = new Shop();
-        assortment [] Intf= new assortment[4];
+        assortment [] Intf= new assortment[5];
         System.out.println("Your Mobile shope has these products : ");
         Intf[0] = S1.CreateProduct(EnumTest.cProduct);
         System.out.println("Product#1\n"+Intf[0].CreateProduct("iPhone-7",700.0, true));
@@ -41,6 +41,8 @@ public class Shop {
         System.out.println("Product#3\n"+Intf[2].CreateProduct("Samsung Galaxy S7", 750.0, true));
         Intf[3] = S1.CreateProduct(EnumTest.cProduct);
         System.out.println("Product#4\n"+Intf[3].CreateProduct("iPhone-6s", 640.0, true));
+        Intf[4] = S1.CreateProduct(EnumTest.cProduct);
+        System.out.println("Product#4\n"+Intf[4].CreateProduct("iPhone-6s Plus", 740.0, true));
     }
     
 }
